@@ -31,7 +31,7 @@ public class Sorter
     
     private void mergeSort(int begin, int end)
     {
-        if ((end-begin)>1) //this probably isn't right, but it runs with this. FIX LATER
+        if (begin<end) //only mergeSort if begin is less than end (also makes sure that begin and and are different)
         {
             //find the center of the array
             int mid=begin+(end-begin)/2;
